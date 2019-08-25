@@ -15,6 +15,12 @@
 		762B06F92311EC3E0066D249 /* FavouritesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B06F82311EC3E0066D249 /* FavouritesTableVC.swift */; };
 		762B06FB2311F44E0066D249 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 762B06FA2311F44E0066D249 /* Default-568h@2x.png */; };
 		762B06FE2311F65A0066D249 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B06FD2311F65A0066D249 /* ThemeManager.swift */; };
+		762B070A2311FFA40066D249 /* DogConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B07092311FFA40066D249 /* DogConstants.swift */; };
+		762B070C2311FFB30066D249 /* DogClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B070B2311FFB30066D249 /* DogClient.swift */; };
+		762B070E231202900066D249 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B070D231202900066D249 /* Reachability.swift */; };
+		762B0711231208240066D249 /* CatchIt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 762B070F231208240066D249 /* CatchIt.xcdatamodeld */; };
+		762B071323120AAF0066D249 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B071223120AAF0066D249 /* DataController.swift */; };
+		762B071523120B610066D249 /* FavouritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B071423120B610066D249 /* FavouritesTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		762B06F82311EC3E0066D249 /* FavouritesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableVC.swift; sourceTree = "<group>"; };
 		762B06FA2311F44E0066D249 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		762B06FD2311F65A0066D249 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		762B07092311FFA40066D249 /* DogConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogConstants.swift; sourceTree = "<group>"; };
+		762B070B2311FFB30066D249 /* DogClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogClient.swift; sourceTree = "<group>"; };
+		762B070D231202900066D249 /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		762B0710231208240066D249 /* CatchIt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CatchIt.xcdatamodel; sourceTree = "<group>"; };
+		762B071223120AAF0066D249 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		762B071423120B610066D249 /* FavouritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +73,7 @@
 		762B06E22311E8A70066D249 /* CatchIt */ = {
 			isa = PBXGroup;
 			children = (
-				762B06FC2311F6310066D249 /* Managers */,
+				762B070F231208240066D249 /* CatchIt.xcdatamodeld */,
 				762B06F52311E8DB0066D249 /* Model */,
 				762B06F62311E8E50066D249 /* View */,
 				762B06F72311E8F00066D249 /* Controller */,
@@ -77,6 +89,10 @@
 		762B06F52311E8DB0066D249 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				762B07092311FFA40066D249 /* DogConstants.swift */,
+				762B070B2311FFB30066D249 /* DogClient.swift */,
+				762B070D231202900066D249 /* Reachability.swift */,
+				762B071223120AAF0066D249 /* DataController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -84,6 +100,8 @@
 		762B06F62311E8E50066D249 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				762B071423120B610066D249 /* FavouritesTableViewCell.swift */,
+				762B06FD2311F65A0066D249 /* ThemeManager.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -95,14 +113,6 @@
 				762B06F82311EC3E0066D249 /* FavouritesTableVC.swift */,
 			);
 			path = Controller;
-			sourceTree = "<group>";
-		};
-		762B06FC2311F6310066D249 /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				762B06FD2311F65A0066D249 /* ThemeManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -177,10 +187,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				762B070E231202900066D249 /* Reachability.swift in Sources */,
 				762B06F92311EC3E0066D249 /* FavouritesTableVC.swift in Sources */,
+				762B070A2311FFA40066D249 /* DogConstants.swift in Sources */,
 				762B06E62311E8A70066D249 /* RandomDogVC.swift in Sources */,
+				762B071323120AAF0066D249 /* DataController.swift in Sources */,
+				762B071523120B610066D249 /* FavouritesTableViewCell.swift in Sources */,
+				762B0711231208240066D249 /* CatchIt.xcdatamodeld in Sources */,
 				762B06E42311E8A70066D249 /* AppDelegate.swift in Sources */,
 				762B06FE2311F65A0066D249 /* ThemeManager.swift in Sources */,
+				762B070C2311FFB30066D249 /* DogClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,6 +396,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		762B070F231208240066D249 /* CatchIt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				762B0710231208240066D249 /* CatchIt.xcdatamodel */,
+			);
+			currentVersion = 762B0710231208240066D249 /* CatchIt.xcdatamodel */;
+			path = CatchIt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 762B06D82311E8A70066D249 /* Project object */;
 }
