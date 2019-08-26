@@ -18,6 +18,7 @@ class FavouritesTableVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -81,27 +82,34 @@ class FavouritesTableVC: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "dogCell", for: indexPath) as! FavoriteDogTableViewCell
-        cell.favoriteDogImageView.image = nil
+        let cell = tableView.dequeueReusableCell(withIdentifier: "dogCell", for: indexPath) as! FavouriteDogTableViewCell
+        cell.favDogImageView.image = nil
+        
+        // CONFIGURE CELL VIEW
+        cell.cardView.layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
+        cell.cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cell.cardView.layer.shadowOpacity = 1.0
+        cell.cardView.layer.masksToBounds = false
+        cell.cardView.layer.cornerRadius = 5.0
         
         let dog = fetchedResultsController.fetchedObjects![indexPath.row]
         
         // CONFIGURE THE CELL FROM CORE DATA
-        cell.favoriteDogBreedLabel.text = "Breed: \(dog.breed ?? "No Breed Info Available")"
+        cell.favDogBreedLbl.text = "\(dog.breed ?? "No Breed Info Available")"
         
         if dog.imageData != nil {
             let dogImage = UIImage(data: dog.imageData!)
-            cell.favoriteDogImageView.image = dogImage
+            cell.favDogImageView.image = dogImage
             return cell
         } else {
             print("no dog image present")
-            cell.favoriteDogImageView.image = #imageLiteral(resourceName: "shiba-8.JPG")
+            cell.favDogImageView.image = #imageLiteral(resourceName: "shiba-8.JPG")
         }
         return cell
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100
+        return 300
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -123,6 +131,18 @@ class FavouritesTableVC: UITableViewController {
             }
             // DELETE THE ROW
             tableView.deleteRows(at: [indexPath], with: .fade)
+        }
+    }
+    
+    
+    override func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        // TABLE VIEW CELLS ANIMATION
+        let rotationTransform = CATransform3DTranslate(CATransform3DIdentity, 0, 50, 0)
+        cell.layer.transform = rotationTransform
+        cell.alpha = 0
+        UIView.animate(withDuration: 0.75) {
+            cell.layer.transform = CATransform3DIdentity
+            cell.alpha = 1.0
         }
     }
 }

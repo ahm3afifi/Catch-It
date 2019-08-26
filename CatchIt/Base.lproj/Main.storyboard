@@ -21,7 +21,7 @@
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="w0C-LM-ZfQ">
                                 <rect key="frame" x="127.5" y="100" width="159" height="29"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="28" id="7VX-qX-n5W"/>
+                                    <constraint firstAttribute="height" constant="28" id="Nrv-Rt-Vcw"/>
                                 </constraints>
                                 <segments>
                                     <segment title="Breed"/>
@@ -80,9 +80,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FDW-Oa-RrC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="-744.64285714285711"/>
+            <point key="canvasLocation" x="628" y="-153"/>
         </scene>
-        <!--Favourites TableVC-->
+        <!--Favourite Breeds-->
         <scene sceneID="hGg-yh-uNO">
             <objects>
                 <tableViewController id="cnn-Bp-0Tn" customClass="FavouritesTableVC" customModule="CatchIt" sceneMemberID="viewController">
@@ -91,40 +91,58 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dogCell" rowHeight="100" id="2de-ei-YD7" userLabel="dogCell" customClass="FavoriteDogTableViewCell" customModule="CatchIt" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="414" height="100"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dogCell" rowHeight="300" id="2de-ei-YD7" userLabel="dogCell" customClass="FavouriteDogTableViewCell" customModule="CatchIt" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="414" height="300"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2de-ei-YD7" id="qCr-8C-egz">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="99.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="299.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-8E-HyZ">
-                                            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s3Y-gh-Hv5">
+                                            <rect key="frame" x="15" y="15" width="384" height="269.5"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="o6Z-8E-HyZ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="384" height="219"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="219" id="YoH-d3-p4G"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odT-oM-ciN">
+                                                    <rect key="frame" x="8" y="227" width="368" height="20"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="20" id="F9e-Bt-qwM"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             <constraints>
-                                                <constraint firstAttribute="height" constant="100" id="FCd-Yl-FbU"/>
-                                                <constraint firstAttribute="width" constant="100" id="ZGi-sT-qkv"/>
+                                                <constraint firstItem="o6Z-8E-HyZ" firstAttribute="leading" secondItem="s3Y-gh-Hv5" secondAttribute="leading" id="9PC-Kr-vbr"/>
+                                                <constraint firstItem="o6Z-8E-HyZ" firstAttribute="top" secondItem="s3Y-gh-Hv5" secondAttribute="top" id="BnT-Ac-7MD"/>
+                                                <constraint firstItem="o6Z-8E-HyZ" firstAttribute="leading" secondItem="s3Y-gh-Hv5" secondAttribute="leading" id="GJV-DW-xlN"/>
+                                                <constraint firstItem="odT-oM-ciN" firstAttribute="top" secondItem="o6Z-8E-HyZ" secondAttribute="bottom" constant="8" id="OBo-vM-qET"/>
+                                                <constraint firstAttribute="trailing" secondItem="odT-oM-ciN" secondAttribute="trailing" constant="8" id="g4u-jx-T9N"/>
+                                                <constraint firstAttribute="trailing" secondItem="o6Z-8E-HyZ" secondAttribute="trailing" id="gdn-fK-GmW"/>
+                                                <constraint firstItem="o6Z-8E-HyZ" firstAttribute="top" secondItem="s3Y-gh-Hv5" secondAttribute="top" id="rxL-on-XZY"/>
+                                                <constraint firstItem="odT-oM-ciN" firstAttribute="leading" secondItem="s3Y-gh-Hv5" secondAttribute="leading" constant="8" id="xHd-2u-Pga"/>
+                                                <constraint firstAttribute="trailing" secondItem="o6Z-8E-HyZ" secondAttribute="trailing" id="ySa-ys-YTy"/>
+                                                <constraint firstAttribute="bottom" secondItem="odT-oM-ciN" secondAttribute="bottom" constant="22.5" id="yfc-sM-kJ7"/>
                                             </constraints>
-                                        </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odT-oM-ciN">
-                                            <rect key="frame" x="117" y="11" width="277" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
+                                        </view>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="odT-oM-ciN" firstAttribute="bottom" secondItem="qCr-8C-egz" secondAttribute="bottomMargin" id="6cw-XV-j7J"/>
-                                        <constraint firstAttribute="bottom" secondItem="o6Z-8E-HyZ" secondAttribute="bottom" id="FSF-So-scH"/>
-                                        <constraint firstItem="odT-oM-ciN" firstAttribute="trailing" secondItem="qCr-8C-egz" secondAttribute="trailingMargin" id="IN1-fo-gCu"/>
-                                        <constraint firstItem="odT-oM-ciN" firstAttribute="leading" secondItem="o6Z-8E-HyZ" secondAttribute="trailing" constant="17" id="Rzf-nH-JFs"/>
-                                        <constraint firstItem="o6Z-8E-HyZ" firstAttribute="top" secondItem="qCr-8C-egz" secondAttribute="top" id="ikW-CY-wAB"/>
-                                        <constraint firstItem="odT-oM-ciN" firstAttribute="top" secondItem="qCr-8C-egz" secondAttribute="topMargin" id="ofr-yl-S74"/>
-                                        <constraint firstItem="o6Z-8E-HyZ" firstAttribute="leading" secondItem="qCr-8C-egz" secondAttribute="leading" id="xHs-af-gMF"/>
+                                        <constraint firstItem="s3Y-gh-Hv5" firstAttribute="top" secondItem="qCr-8C-egz" secondAttribute="top" constant="15" id="0Xb-Xb-3Dt"/>
+                                        <constraint firstItem="s3Y-gh-Hv5" firstAttribute="leading" secondItem="qCr-8C-egz" secondAttribute="leading" constant="15" id="Bae-Q1-LCF"/>
+                                        <constraint firstAttribute="trailing" secondItem="s3Y-gh-Hv5" secondAttribute="trailing" constant="15" id="WTb-WB-Prm"/>
+                                        <constraint firstAttribute="bottom" secondItem="s3Y-gh-Hv5" secondAttribute="bottom" constant="15" id="fAg-2b-TIF"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="favoriteDogBreedLabel" destination="odT-oM-ciN" id="RIq-2e-wXT"/>
-                                    <outlet property="favoriteDogImageView" destination="o6Z-8E-HyZ" id="vdA-vf-8dx"/>
+                                    <outlet property="cardView" destination="s3Y-gh-Hv5" id="W1D-AH-luf"/>
+                                    <outlet property="favDogBreedLbl" destination="odT-oM-ciN" id="h06-yO-nGi"/>
+                                    <outlet property="favDogImageView" destination="o6Z-8E-HyZ" id="AYx-XA-Yv2"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -133,11 +151,11 @@
                             <outlet property="delegate" destination="cnn-Bp-0Tn" id="u9h-fL-EE3"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="lws-NZ-KTH"/>
+                    <navigationItem key="navigationItem" title="Favourite Breeds" id="lws-NZ-KTH"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mbd-RP-0dh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2602.898550724638" y="15.401785714285714"/>
+            <point key="canvasLocation" x="2307.2463768115945" y="-153.34821428571428"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="UTd-1B-Tsb">
@@ -156,7 +174,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="L2H-dK-Au6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="-744.64285714285711"/>
+            <point key="canvasLocation" x="-181" y="-153"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="8dA-XB-Lfu">
@@ -175,7 +193,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sUx-4m-IHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1692.753623188406" y="15.401785714285714"/>
+            <point key="canvasLocation" x="1523" y="-153"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="xaq-Fk-MjP">
@@ -194,7 +212,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eJB-gY-ybM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="782.60869565217399" y="-364.95535714285711"/>
+            <point key="canvasLocation" x="1038" y="-883"/>
         </scene>
     </scenes>
     <resources>

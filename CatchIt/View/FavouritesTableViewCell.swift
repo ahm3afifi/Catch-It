@@ -1,5 +1,5 @@
 //
-//  FavouritesTableViewCell.swift
+//  FavouriteDogTableViewCell.swift
 //  CatchIt
 //
 //  Created by Ahmed Afifi on 8/25/19.
@@ -8,19 +8,19 @@
 
 import UIKit
 
-class FavoriteDogTableViewCell: UITableViewCell {
+class FavouriteDogTableViewCell: UITableViewCell {
     
-    @IBOutlet var favoriteDogImageView: UIImageView!
-    @IBOutlet var favoriteDogBreedLabel: UILabel!
+    @IBOutlet weak var cardView: UIView!
+    @IBOutlet var favDogImageView: UIImageView!
+    @IBOutlet var favDogBreedLbl: UILabel!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
-    
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-        // Configure the view for the selected state
+    func configure() {
+ 
+        cardView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
+        cardView.layer.shadowOpacity = 1.0
+        cardView.layer.masksToBounds = false
+        cardView.layer.cornerRadius = 2.0
     }
     
 }

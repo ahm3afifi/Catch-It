@@ -34,6 +34,8 @@ class RandomDogVC: UIViewController {
         breedLbl.isHidden = true
         breedSegControl.isHidden = true
         randomDogButtonPressed(self)
+        dogImageView.layer.cornerRadius = 20
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
