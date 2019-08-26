@@ -13,7 +13,6 @@
 		762B06EB2311E8A70066D249 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 762B06EA2311E8A70066D249 /* Assets.xcassets */; };
 		762B06EE2311E8A70066D249 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 762B06EC2311E8A70066D249 /* LaunchScreen.storyboard */; };
 		762B06F92311EC3E0066D249 /* FavouritesTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B06F82311EC3E0066D249 /* FavouritesTableVC.swift */; };
-		762B06FB2311F44E0066D249 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 762B06FA2311F44E0066D249 /* Default-568h@2x.png */; };
 		762B06FE2311F65A0066D249 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B06FD2311F65A0066D249 /* ThemeManager.swift */; };
 		762B070A2311FFA40066D249 /* DogConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B07092311FFA40066D249 /* DogConstants.swift */; };
 		762B070C2311FFB30066D249 /* DogClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 762B070B2311FFB30066D249 /* DogClient.swift */; };
@@ -32,7 +31,6 @@
 		762B06ED2311E8A70066D249 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		762B06EF2311E8A70066D249 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		762B06F82311EC3E0066D249 /* FavouritesTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouritesTableVC.swift; sourceTree = "<group>"; };
-		762B06FA2311F44E0066D249 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		762B06FD2311F65A0066D249 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		762B07092311FFA40066D249 /* DogConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogConstants.swift; sourceTree = "<group>"; };
 		762B070B2311FFB30066D249 /* DogClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogClient.swift; sourceTree = "<group>"; };
@@ -57,7 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				762B06E22311E8A70066D249 /* CatchIt */,
-				762B06FA2311F44E0066D249 /* Default-568h@2x.png */,
+				762B070F231208240066D249 /* CatchIt.xcdatamodeld */,
 				762B06E12311E8A70066D249 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -73,14 +71,10 @@
 		762B06E22311E8A70066D249 /* CatchIt */ = {
 			isa = PBXGroup;
 			children = (
-				762B070F231208240066D249 /* CatchIt.xcdatamodeld */,
 				762B06F52311E8DB0066D249 /* Model */,
 				762B06F62311E8E50066D249 /* View */,
 				762B06F72311E8F00066D249 /* Controller */,
 				762B06E32311E8A70066D249 /* AppDelegate.swift */,
-				762B06E72311E8A70066D249 /* Main.storyboard */,
-				762B06EA2311E8A70066D249 /* Assets.xcassets */,
-				762B06EC2311E8A70066D249 /* LaunchScreen.storyboard */,
 				762B06EF2311E8A70066D249 /* Info.plist */,
 			);
 			path = CatchIt;
@@ -100,8 +94,11 @@
 		762B06F62311E8E50066D249 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				762B06E72311E8A70066D249 /* Main.storyboard */,
 				762B071423120B610066D249 /* FavouritesTableViewCell.swift */,
 				762B06FD2311F65A0066D249 /* ThemeManager.swift */,
+				762B06EA2311E8A70066D249 /* Assets.xcassets */,
+				762B06EC2311E8A70066D249 /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -174,7 +171,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				762B06EE2311E8A70066D249 /* LaunchScreen.storyboard in Resources */,
-				762B06FB2311F44E0066D249 /* Default-568h@2x.png in Resources */,
 				762B06EB2311E8A70066D249 /* Assets.xcassets in Resources */,
 				762B06E92311E8A70066D249 /* Main.storyboard in Resources */,
 			);
@@ -345,6 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NL7XQ986;
 				INFOPLIST_FILE = "$(SRCROOT)/CatchIt/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -363,6 +360,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 68NL7XQ986;
 				INFOPLIST_FILE = "$(SRCROOT)/CatchIt/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
