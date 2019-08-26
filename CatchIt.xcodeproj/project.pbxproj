@@ -94,11 +94,11 @@
 		762B06F62311E8E50066D249 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				762B06E72311E8A70066D249 /* Main.storyboard */,
 				762B071423120B610066D249 /* FavouritesTableViewCell.swift */,
 				762B06FD2311F65A0066D249 /* ThemeManager.swift */,
-				762B06EA2311E8A70066D249 /* Assets.xcassets */,
+				762B06E72311E8A70066D249 /* Main.storyboard */,
 				762B06EC2311E8A70066D249 /* LaunchScreen.storyboard */,
+				762B06EA2311E8A70066D249 /* Assets.xcassets */,
 			);
 			path = View;
 			sourceTree = "<group>";
