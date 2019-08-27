@@ -140,5 +140,8 @@ class FavouritesTableVC: UITableViewController {
             cell.layer.transform = CATransform3DIdentity
             cell.alpha = 1.0
         }
+        
+        tableView.allowsSelection = false
     }
+    
 }

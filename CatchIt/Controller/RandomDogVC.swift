@@ -76,6 +76,7 @@ class RandomDogVC: UIViewController {
             ac.addAction(okAction)
             reloadBtn.isEnabled = false
             favouriteBtn.isEnabled = false
+            activityIndicator.stopAnimating()
             self.view.alpha = 0.25
             present(ac, animated: true, completion: nil)
         }
@@ -94,11 +95,7 @@ class RandomDogVC: UIViewController {
     }
     
     func shouldEnable() -> Bool {
-        if tempDog.isEmpty {
-            return false
-        } else {
-            return true
-        }
+        return !tempDog.isEmpty
     }
     
     
@@ -189,7 +186,7 @@ class RandomDogVC: UIViewController {
                 self.breedLbl.text = "Breed: \(self.breedArray[0])"
                 self.breedLbl.isHidden = false
                 
-                if self.isFavorite() == true {
+                if self.isFavorite() {
                     self.favouriteBtn.isEnabled = true
                     self.favouriteBtn.tintColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
                 } else {
@@ -266,9 +263,6 @@ class RandomDogVC: UIViewController {
         }
     }
     
-    // ACTION METHOD TO SHARE THE DOG IMAGE
-    @IBAction func shareDogImage(_ sender: Any) {
-    }
     
 }
 

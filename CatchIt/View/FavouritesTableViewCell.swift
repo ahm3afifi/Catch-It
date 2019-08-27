@@ -14,6 +14,7 @@ class FavouriteDogTableViewCell: UITableViewCell {
     @IBOutlet var favDogImageView: UIImageView!
     @IBOutlet var favDogBreedLbl: UILabel!
     
+    
     func cardViewConfig() {
  
         cardView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
