@@ -1,6 +1,6 @@
 # Catch It
 
-This app is my finale project for the iOS Developer Nanodegree by Udacity.
+This app is my final project for the iOS Developer Nanodegree by Udacity.
 
 # About The App
 
