@@ -17,5 +17,9 @@ This app utilizes the [Ashley Mills Reachability](https://github.com/ashleymills
 
 # How to Build
 
-Download zip or fork & clone project on your desktop and run it. That's it.
+1. Download zip or fork & clone project on your desktop.
+2. Open `CatchIt.xcodeproj` file in Xcode.
+3. Now you can build and run the app.
 
+# Certificate
+You can check my iOS Developer Nanodegree Certificate [here](https://confirm.udacity.com/2DTEPF5).
