@@ -4,7 +4,7 @@ This app is my final project for the iOS Developer Nanodegree by Udacity.
 
 # About The App
 
-Catch It is a simple app that uses [Dog API](https://dog.ceo/dog-api/) to fetch random dog images and let users to catch any Dog breed image they like and presist it in the device by using Core Data. Then you can see your favourite images in a beautiful tableview cells with a fancy scroll animations. 
+Catch It is a simple app that uses [Dog API](https://dog.ceo/dog-api/) to fetch random dog images and let users to catch any Dog breed image they like and persist it in the device by using Core Data. Then you can see your favourite images in beautiful tableview cells with a fancy scroll animation. 
 
 # Libraries and Frameworks Used
 
