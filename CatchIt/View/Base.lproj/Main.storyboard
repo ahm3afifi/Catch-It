@@ -117,7 +117,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                             <constraints>
                                                 <constraint firstItem="o6Z-8E-HyZ" firstAttribute="leading" secondItem="s3Y-gh-Hv5" secondAttribute="leading" id="9PC-Kr-vbr"/>
                                                 <constraint firstItem="o6Z-8E-HyZ" firstAttribute="top" secondItem="s3Y-gh-Hv5" secondAttribute="top" id="BnT-Ac-7MD"/>
@@ -161,7 +161,7 @@
         <scene sceneID="UTd-1B-Tsb">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vPU-La-VgD" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="search" id="Qip-hC-Pb3"/>
+                    <tabBarItem key="tabBarItem" image="Dog" selectedImage="Dog" id="Qip-hC-Pb3"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NEb-bZ-0Fk">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -180,7 +180,7 @@
         <scene sceneID="8dA-XB-Lfu">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GVp-tE-691" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="GJ3-qU-bJ9"/>
+                    <tabBarItem key="tabBarItem" image="Favourites" selectedImage="Favourites" id="GJ3-qU-bJ9"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="wYx-W4-izv">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -216,6 +216,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Dog" width="32" height="32"/>
         <image name="Favorite" width="32" height="32"/>
+        <image name="Favourites" width="32" height="32"/>
     </resources>
 </document>

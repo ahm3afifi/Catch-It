@@ -17,11 +17,11 @@ class FavouriteDogTableViewCell: UITableViewCell {
     
     func cardViewConfig() {
  
-        cardView.layer.shadowColor = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 1)
+        cardView.layer.shadowColor = #colorLiteral(red: 0.501960814, green: 0.501960814, blue: 0.501960814, alpha: 1)
         cardView.layer.shadowOffset = CGSize(width: 1.0, height: 1.0)
         cardView.layer.shadowOpacity = 1.0
-        cardView.layer.masksToBounds = false
-        cardView.layer.cornerRadius = 2.0
+        cardView.layer.masksToBounds = true
+        cardView.layer.cornerRadius = 7.0
     }
     
 }
