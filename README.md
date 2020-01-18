@@ -4,6 +4,10 @@ This app is my final project for the iOS Developer Nanodegree by Udacity.
 
 [<img width="200" src="https://user-images.githubusercontent.com/30387348/72661268-65709500-39f1-11ea-8394-50c516655f14.png" />](https://apps.apple.com/eg/app/catch-it-dog-breeds-finder/id1484654832)
 
+# Preview
+
+<img width="300" src = "https://user-images.githubusercontent.com/30387348/72661793-15490100-39f8-11ea-9dce-6619176d9e45.png" />       <img width="300" src = "https://user-images.githubusercontent.com/30387348/72661795-15490100-39f8-11ea-8257-bc93533267b9.png" />
+
 # About The App
 
 Catch It is a simple app that uses [Dog API](https://dog.ceo/dog-api/) to fetch random dog images and let users to catch any Dog breed image they like and persist it in the device by using Core Data. Then you can see your favourite images in beautiful tableview cells with a fancy scroll animation. 
