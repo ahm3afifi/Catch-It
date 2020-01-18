@@ -2,7 +2,7 @@
 
 This app is my final project for the iOS Developer Nanodegree by Udacity.
 
-Link on Appstore: https://apps.apple.com/eg/app/catch-it-dog-breeds-finder/id1484654832
+[<img width="200" src="https://user-images.githubusercontent.com/30387348/72661268-65709500-39f1-11ea-8394-50c516655f14.png" />](https://apps.apple.com/eg/app/catch-it-dog-breeds-finder/id1484654832)
 
 # About The App
 
