@@ -28,4 +28,4 @@ This app utilizes the [Ashley Mills Reachability](https://github.com/ashleymills
 3. Now you can build and run the app.
 
 # Certificate
-You can check my iOS Developer Nanodegree Certificate [here](https://confirm.udacity.com/2DTEPF5).
+Check my iOS Developer Nanodegree Certificate [here](https://confirm.udacity.com/2DTEPF5).
